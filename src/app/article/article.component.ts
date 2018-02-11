@@ -1,4 +1,7 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import { Component,
+         OnInit,
+         Input,
+         HostBinding } from '@angular/core';
 
 import { Article } from './article.model';
 
@@ -15,12 +18,12 @@ export class ArticleComponent implements OnInit {
   constructor() {
   }
 
-  voteUp() {
+  voteUp(): boolean {
     this.article.voteUp();
     return false;
   }
 
-  voteDown() {
+  voteDown(): boolean {
     this.article.voteDown();
     return false;
   }
