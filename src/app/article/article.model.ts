@@ -24,7 +24,7 @@ export class Article {
            // eg http://foo.com/path/to/bar
            const domainAndPath: string = this.link.split('//')[1];
            // eg foo.com/path/to/bar
-           return domainAndPath.split('/')[0];           
+           return domainAndPath.split('/')[0];
        } catch (err) {
            return null;
        }
